@@ -1,0 +1,52 @@
+#footer{
+  .footer{
+    h1{
+      text-align: center;
+      color: #FFF;
+      leading-trim: both;
+      text-edge: cap;
+      font-family: Montserrat, sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+      font-variant: small-caps;
+      letter-spacing: -0.2px;
+    }
+    &--text{
+      margin: 0 0 0 159px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__name{
+        width: 374px;
+        height: 140px;
+       display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin: 80px 0 143px 0;
+
+
+        h2{
+          color: #FFF;
+          font-family: Montserrat, sans-serif;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 130%;
+          font-variant: small-caps;
+          letter-spacing: -0.2px;
+        }
+        h3{
+          color: #FFF;
+          font-family: Montserrat, sans-serif;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 130%;
+          font-variant: small-caps;
+          letter-spacing: -0.2px;
+        }
+      }
+    }
+  }
+}
