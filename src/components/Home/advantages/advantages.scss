@@ -1,0 +1,267 @@
+#advantages{
+  padding: 10% 0;
+  .advantages{
+    h1{
+      color: #FFF;
+      font-family: Montserrat, sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+      font-variant: small-caps;
+      letter-spacing: -0.2px;
+      text-align: center;
+      margin-bottom: 79px;
+    }
+    &--block{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      &__blocks{
+        width: 542px;
+        height: 500px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        border: 2px solid var(--, #282828);
+        &--images {
+          display: inline-block;
+          overflow: hidden;
+          border-radius: 4px;
+          position: relative;
+
+          img {
+            transition: transform 0.5s, filter 1s;
+            display: block;
+            filter: grayscale(100%);
+          }
+
+          img:hover {
+            transform: scale(1.5);
+            filter: none;
+          }
+        }
+        h2{
+          margin: 15px 0;
+          color: #FFF;
+          font-family: Montserrat, sans-serif;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 130%;
+          font-variant: small-caps;
+          letter-spacing: -0.2px;
+        }
+        p{
+          width: 503px;
+          color: #FFF;
+          font-family: Montserrat, sans-serif;
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 130%;
+          font-variant: small-caps;
+          letter-spacing: -0.2px;
+          opacity: 0.8;
+        }
+      }
+    }
+    &--bad{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      &__blocks{
+        width: 542px;
+        height: 500px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        border: 2px solid var(--, #282828);
+        &--images {
+          display: inline-block;
+          overflow: hidden;
+          border-radius: 4px;
+          position: relative;
+
+          img {
+            transition: transform 0.5s, filter 1s;
+            display: block;
+            filter: grayscale(100%);
+          }
+
+          img:hover {
+            transform: scale(1.5);
+            filter: none;
+          }
+        }
+        h2{
+          margin: 15px 0;
+          color: #FFF;
+          font-family: Montserrat, sans-serif;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 130%;
+          font-variant: small-caps;
+          letter-spacing: -0.2px;
+        }
+        p{
+          width: 503px;
+          color: #FFF;
+          font-family: Montserrat, sans-serif;
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 130%;
+          font-variant: small-caps;
+          letter-spacing: -0.2px;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  #advantages .advantages--block__blocks--images img {
+    width: 100%;
+  }
+  #advantages .advantages--bad__blocks--images img {
+    width: 100%;
+  }
+  #advantages .advantages--block__blocks {
+    width: 460px;
+    height: 470px;
+  }
+  #advantages .advantages--bad__blocks {
+    width: 460px;
+    height: 470px;
+  }
+  #advantages .advantages--bad__blocks p {
+    width: 441px;
+  }
+  #advantages .advantages--block__blocks p {
+    width: 441px;
+  }
+}
+@media (max-width: 1024px) {
+  #advantages .advantages--block__blocks {
+    width: 385px;
+    height: 385px;
+  }
+  #advantages .advantages--bad__blocks {
+    width: 385px;
+    height: 385px;
+  }
+  #advantages .advantages--block__blocks h2 {
+    margin: 10px 0;
+    font-size: 22px;
+  }
+  #advantages .advantages--bad__blocks h2 {
+    margin: 10px 0;
+    font-size: 22px;
+  }
+  #advantages .advantages--block__blocks p {
+    width: 385px;
+    font-size: 18px;
+  }
+  #advantages .advantages--bad__blocks p {
+    width: 385px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 992px) {
+  #advantages .advantages--block__blocks h2 {
+    font-size: 20px;
+  }
+  #advantages .advantages--bad__blocks h2 {
+    font-size: 20px;
+  }
+  #advantages .advantages--block__blocks p {
+    width: 345px;
+    font-size: 16px;
+  }
+  #advantages .advantages--bad__blocks p {
+    width: 345px;
+    font-size: 16px;
+  }
+  #advantages .advantages h1 {
+    font-size: 22px;
+    margin-bottom: 59px;
+  }
+}
+@media (max-width: 820px) {
+  #advantages .advantages--block__blocks {
+    width: 294px;
+    height: 332px;
+    margin-bottom: 20px;
+  }
+  #advantages .advantages--bad__blocks {
+    width: 294px;
+    height: 332px;
+  }
+  #advantages .advantages--block__blocks p {
+    width: 283px;
+  }
+  #advantages .advantages--bad__blocks p {
+    width: 283px;
+  }
+}
+@media (max-width: 768px) {
+  #advantages .advantages--block__blocks {
+    width: 294px;
+    height: 332px;
+    margin-bottom: 20px;
+  }
+  #advantages .advantages--bad__blocks {
+    width: 294px;
+    height: 332px;
+  }
+  #advantages .advantages--block__blocks p {
+    width: 283px;
+  }
+  #advantages .advantages--bad__blocks p {
+    width: 283px;
+  }
+}
+@media (max-width: 576px) {
+  #advantages .advantages--block {
+    flex-wrap: wrap;
+  }
+  #advantages .advantages--bad {
+    flex-wrap: wrap;
+  }
+  #advantages .advantages--bad__blocks {
+    margin-bottom: 20px;
+  }
+  #advantages .advantages--block__blocks {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 400px) {
+  #advantages .advantages h1 {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 375px) {
+  #advantages .advantages--bad__blocks h2 {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  #advantages .advantages--bad__blocks p {
+    width: 283px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  #advantages .advantages h1 {
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 320px) {
+  #advantages .advantages--bad__blocks {
+    width: 283px;
+    height: 283px;
+  }
+  #advantages .advantages--block__blocks {
+    width: 283px;
+    height: 290px;
+  }
+  #advantages .advantages h1 {
+    font-size: 22px;
+  }
+}
