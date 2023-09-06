@@ -1,3 +1,13 @@
+import React from "react";
+
+const Home = () => {
+  return (
+    <div id="home">
+      <div className="container">
+        <div className="home"></div>
+      </div>
+    </div>
+  );
 import React from 'react';
 import Functional from "./functional/functional";
 import Questions from "./Questions/questions";

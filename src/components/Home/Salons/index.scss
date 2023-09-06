@@ -1,0 +1,1368 @@
+#salons {
+    .container {
+        .h1 {
+            padding-bottom: 40px;
+
+            h1 {
+                color: #000;
+                font-family: Montserrat, sans-serif;
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 130%;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: #000;
+                font-family: Inria Sans;
+                font-size: 24px;
+                font-family: Montserrat, sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+
+            .line {
+                width: 70px;
+                height: 2px;
+                color: red;
+                background: red;
+            }
+        }
+
+        .salons {
+            display: flex;
+            justify-content: center;
+
+            &-bish {
+                width: 400px;
+                height: 500px;
+                position: relative;
+                border-bottom: 4px solid #D22B43;
+                overflow: hidden;
+                margin: 0 10px;
+
+
+                img {
+                    display: inline-block;
+                    overflow: hidden;
+                    border-radius: 12px;
+                    position: relative;
+                    width: 400px;
+                    height: 500px;
+                    transition: transform 1s, filter 1s, brightness 1s;
+                    filter: grayscale(100%);
+                    object-fit: cover;
+                }
+
+                &:hover img {
+                    transform: scale(1.5);
+                    filter: grayscale(10%);
+                }
+
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 0;
+                    background-color: #D22B43;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 20;
+                    transition: height 0.3s ease;
+                }
+
+                &:hover::after {
+                    height: 300px;
+                }
+
+                &_detals {
+                    position: absolute;
+                    width: 100%;
+                    position: fixed;
+                    top: 45%;
+                    // opacity: 1;
+                    pointer-events: auto;
+                    z-index: 21;
+                    transition: .5s;
+
+
+
+                    h1 {
+                        color: #fff;
+                        font-size: 20px;
+                        font-family: Montserrat, sans-serif;
+                        padding: 0 0 1% 3%;
+                        font-weight: 6 00;
+                        font-family: Montserrat;
+                        text-transform: uppercase;
+
+
+                    }
+
+                    &-block {
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                        padding: 10px 0 0 40px;
+
+                        h3 {
+                            color: #fff;
+                            font-size: 25px;
+                            color: var(--WHITE, #FFF);
+                            font-family: Montserrat, sans-serif;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 130%;
+                            /* 26px */
+                            font-variant: small-caps;
+                            letter-spacing: -0.2px;
+                        }
+
+                        p {
+                            color: #fff;
+                            font-family: Montserrat, sans-serif;
+                            font-size: 30px;
+                            padding-left: 10px;
+                        }
+                    }
+
+                    button {
+                        display: flex;
+                        padding: 10px 100px;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 30px 0 0 30px;
+                        background: transparent;
+                        outline: none;
+                        border: 1px solid white;
+                        color: var(--WHITE, #FFF);
+                        font-family: Montserrat, sans-serif;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-variant: small-caps;
+                    }
+
+                }
+            }
+
+            &-osh {
+                width: 400px;
+                height: 500px;
+                position: relative;
+                border-bottom: 4px solid #D22B43;
+                overflow: hidden;
+                margin: 0 10px;
+
+
+                img {
+                    display: inline-block;
+                    overflow: hidden;
+                    border-radius: 12px;
+                    position: relative;
+                    transition: transform 1s, filter 1s, brightness 1s;
+                    filter: grayscale(100%);
+                    object-fit: cover;
+                }
+
+                &:hover img {
+                    transform: scale(1.5);
+                    filter: grayscale(10%);
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 0;
+                    background-color: #D22B43;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 20;
+                    transition: height 0.3s ease;
+                }
+
+                &:hover::after {
+                    height: 300px;
+                }
+
+                &_detals {
+                    position: absolute;
+                    width: 100%;
+                    position: fixed;
+                    top: 45%;
+                    z-index: 21;
+                    transition: .5s;
+
+                    h1 {
+                        color: #fff;
+                        font-size: 30px;
+                        text-align: center;
+                        font-family: Montserrat, sans-serif;
+                        padding: 0 0 1% 2%;
+                        font-weight: 800;
+                    }
+
+                    &-block {
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                        padding: 10px 0 0 40px;
+
+                        h3 {
+                            color: #fff;
+                            font-size: 25px;
+                        }
+
+                        p {
+                            color: #fff;
+                            font-size: 30px;
+                            padding-left: 10px;
+                        }
+                    }
+
+                    button {
+                        width: 15%;
+                        height: 35px;
+                        margin: 30px 0 0 45px;
+                        background: transparent;
+                        outline: none;
+                        border: 1px solid white;
+                        color: #fff;
+                        font-size: 20px;
+                    }
+
+                }
+            }
+
+            &-abad {
+                width: 400px;
+                height: 500px;
+                position: relative;
+                border-bottom: 4px solid #D22B43;
+                overflow: hidden;
+                margin: 0 10px;
+
+
+
+                img {
+                    display: inline-block;
+                    overflow: hidden;
+                    border-radius: 12px;
+                    position: relative;
+                    transition: transform 1s, filter 1s, brightness 1s;
+                    filter: grayscale(80%);
+                    object-fit: cover;
+
+                }
+
+                &:hover img {
+                    transform: scale(1.5);
+                    filter: grayscale(10%);
+                    object-fit: cover;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 0;
+                    background-color: #D22B43;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 20;
+                    transition: height 0.3s ease;
+                }
+
+                &:hover::after {
+                    height: 300px;
+                }
+
+                &_detals {
+                    position: absolute;
+                    width: 100%;
+                    position: fixed;
+                    top: 45%;
+                    z-index: 21;
+                    transition: .5s;
+                    opacity: 1;
+                    pointer-events: auto;
+
+                    h1 {
+                        color: #fff;
+                        font-size: 30px;
+                        padding: 0 0 1% 2%;
+                        font-weight: 900;
+
+
+                    }
+
+                    &-block {
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                        padding: 10px 0 0 40px;
+
+                        h3 {
+                            color: #fff;
+                            font-size: 25px;
+                        }
+
+                        p {
+                            color: #fff;
+                            font-size: 30px;
+                            padding-left: 10px;
+                        }
+                    }
+
+                    button {
+                        width: 15%;
+                        height: 35px;
+                        margin: 30px 0 0 45px;
+                        background: transparent;
+                        outline: none;
+                        border: 1px solid white;
+                        color: #fff;
+                        font-size: 20px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1440px) {
+    #salons {
+        .container {
+            .h1 {
+
+                h1 {}
+
+                p {}
+
+                .line {}
+            }
+
+            .salons {
+
+                &-bish {
+                    img {}
+
+                    &:hover img {}
+
+
+                    &::after {
+                        content: '';
+                    }
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-osh {
+
+
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-abad {
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {
+
+
+                                p {}
+                            }
+
+                            button {}
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1200px) {
+    #salons {
+        .container {
+            .h1 {
+
+                h1 {}
+
+                p {}
+
+                .line {}
+            }
+
+            .salons {
+
+                &-bish {
+                    width: 350px;
+                    height: 471px;
+
+                    img {}
+
+                    &:hover img {}
+
+
+                    &::after {
+                        content: '';
+                    }
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {
+                            padding: 10px 75px;
+                            margin: 30px 0 0 34px;
+                        }
+
+                    }
+                }
+
+                &-osh {
+                    width: 350px;
+                    height: 471px;
+
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-abad {
+                    width: 350px;
+                    height: 471px;
+
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {
+
+
+                                p {}
+                            }
+
+                            button {}
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1024px) {
+    #salons {
+        .container {
+            .h1 {
+
+                h1 {}
+
+                p {}
+
+                .line {}
+            }
+
+            .salons {
+
+                &-bish {
+                    img {}
+
+                    &:hover img {}
+
+
+                    &::after {
+                        content: '';
+                    }
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-osh {
+
+
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-abad {
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {
+
+
+                                p {}
+                            }
+
+                            button {}
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 992px) {
+    #salons {
+        .container {
+            .h1 {
+
+                h1 {}
+
+                p {}
+
+                .line {}
+            }
+
+            .salons {
+
+                &-bish {
+                    img {}
+
+                    &:hover img {}
+
+
+                    &::after {
+                        content: '';
+                    }
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-osh {
+
+
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-abad {
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {
+
+
+                                p {}
+                            }
+
+                            button {}
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    #salons {
+        .container {
+            .h1 {
+
+                h1 {}
+
+                p {}
+
+                .line {}
+            }
+
+            .salons {
+
+                &-bish {
+                    img {}
+
+                    &:hover img {}
+
+
+                    &::after {
+                        content: '';
+                    }
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-osh {
+
+
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-abad {
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {
+
+
+                                p {}
+                            }
+
+                            button {}
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 576px) {
+    #salons {
+        .container {
+            .h1 {
+
+                h1 {}
+
+                p {}
+
+                .line {}
+            }
+
+            .salons {
+
+                &-bish {
+                    img {}
+
+                    &:hover img {}
+
+
+                    &::after {
+                        content: '';
+                    }
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-osh {
+
+
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-abad {
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {
+
+
+                                p {}
+                            }
+
+                            button {}
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 450px) {
+    #salons {
+        .container {
+            .h1 {
+
+                h1 {}
+
+                p {}
+
+                .line {}
+            }
+
+            .salons {
+
+                &-bish {
+                    img {}
+
+                    &:hover img {}
+
+
+                    &::after {
+                        content: '';
+                    }
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-osh {
+
+
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-abad {
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {
+
+
+                                p {}
+                            }
+
+                            button {}
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 400px) {
+    #salons {
+        .container {
+            .h1 {
+
+                h1 {}
+
+                p {}
+
+                .line {}
+            }
+
+            .salons {
+
+                &-bish {
+                    img {}
+
+                    &:hover img {}
+
+
+                    &::after {
+                        content: '';
+                    }
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-osh {
+
+
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-abad {
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {
+
+
+                                p {}
+                            }
+
+                            button {}
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 375px) {
+    #salons {
+        .container {
+            .h1 {
+
+                h1 {}
+
+                p {}
+
+                .line {}
+            }
+
+            .salons {
+
+                &-bish {
+                    img {}
+
+                    &:hover img {}
+
+
+                    &::after {
+                        content: '';
+                    }
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-osh {
+
+
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-abad {
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {
+
+
+                                p {}
+                            }
+
+                            button {}
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 320px) {
+    #salons {
+        .container {
+            .h1 {
+
+                h1 {}
+
+                p {}
+
+                .line {}
+            }
+
+            .salons {
+
+                &-bish {
+                    img {}
+
+                    &:hover img {}
+
+
+                    &::after {
+                        content: '';
+                    }
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-osh {
+
+
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {}
+
+                            p {}
+                        }
+
+                        button {}
+
+                    }
+                }
+
+                &-abad {
+                    img {}
+
+                    &:hover img {}
+
+                    &::after {}
+
+                    &:hover::after {}
+
+                    &_detals {
+
+
+                        h1 {}
+
+                        &-block {
+
+                            h3 {
+
+
+                                p {}
+                            }
+
+                            button {}
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
