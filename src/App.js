@@ -23,6 +23,29 @@ const App = () => {
       {/* <Footer/> */}
     </div>
   );
+import Platform from "./components/Home/platform/platform";
+import Advantages from "./components/Home/advantages/advantages";
+import Price from "./components/Barbers/price/price";
+import SalonPrice from "./components/Salon/SalonPrice/SalonPrice";
+
+
+const App = () => {
+    return (
+        <div>
+          {/*<Header/>*/}
+            <Advantages/>
+            <Platform/>
+            <Price/>
+            <SalonPrice/>
+            <Routes>
+               <Route path="barbers" element={<Barbers/>}/>
+               <Route path="salon" element={<Salon/>}/>
+               <Route path="blog" element={<Blog/>}/>
+               <Route path="home" element={<Home/>}/>
+            </Routes>
+            {/*<Footer/>*/}
+        </div>
+    );
 };
 
 export default App;
