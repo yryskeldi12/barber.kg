@@ -1,12 +1,13 @@
 import React from 'react';
+import Functional from "./functional/functional";
+import Questions from "./Questions/questions";
 
 const Home = () => {
     return (
         <div id='home'>
             <div className="container">
-                <div className="home">
-                    <h1 style={{color:'white'}}>home</h1>
-                </div>
+                <Functional/>
+                <Questions/>
             </div>
         </div>
     );
