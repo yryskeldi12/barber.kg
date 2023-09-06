@@ -1,4 +1,8 @@
 #salons {
+    background: white;
+    height: 750px;
+    border-bottom: 2px solid #D22B43;
+    margin-bottom: 10px;
     .container {
         .h1 {
             padding-bottom: 40px;
@@ -46,7 +50,6 @@
                 img {
                     display: inline-block;
                     overflow: hidden;
-                    border-radius: 12px;
                     position: relative;
                     width: 400px;
                     height: 500px;
@@ -80,7 +83,7 @@
                 &_detals {
                     position: absolute;
                     width: 100%;
-                    position: fixed;
+                    //position: fixed;
                     top: 45%;
                     // opacity: 1;
                     pointer-events: auto;
@@ -93,10 +96,11 @@
                         color: #fff;
                         font-size: 20px;
                         font-family: Montserrat, sans-serif;
-                        padding: 0 0 1% 3%;
-                        font-weight: 6 00;
+                        //padding: 0 0 1% 8%;
+                        font-weight: 600;
                         font-family: Montserrat;
                         text-transform: uppercase;
+                        text-align: center;
 
 
                     }

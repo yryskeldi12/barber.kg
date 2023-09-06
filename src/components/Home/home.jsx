@@ -1,28 +1,22 @@
 import React from "react";
-
-const Home = () => {
-  return (
-    <div id="home">
-      <div className="container">
-        <div className="home"></div>
-      </div>
-    </div>
-  );
-import React from 'react';
 import Functional from "./functional/functional";
 import Questions from "./Questions/questions";
-import Hero from './Hero/hero';
+import Hero from "./Hero/hero";
+import Salons from "./Salons";
+import Advantages from "./advantages/advantages";
+import Platform from "./platform/platform";
+
 
 const Home = () => {
     return (
         <div  id='home'>
             <div className="container">
+                <Hero/>
                 <Functional/>
+                <Advantages/>
+                <Platform/>
+                <Salons/>
                 <Questions/>
-                <div className="home">
-                    {/* <h1 style={{color:'white'}}>home</h1> */}
-                   <Hero/>
-                </div>
             </div>
         </div>
     );
