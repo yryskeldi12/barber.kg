@@ -1,0 +1,30 @@
+#headerBlog{
+  background: #282828;
+  .headerBlog{
+    display: flex;
+    width: 1240px;
+    padding: 10px 0;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #282828;
+    h1{
+      color: #F1F1F1;
+      font-family: Montserrat, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}
+@media (max-width: 1240px) {
+  #headerBlog .headerBlog{
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  #headerBlog .headerBlog h1 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  
+}

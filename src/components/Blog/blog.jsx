@@ -1,13 +1,16 @@
 import React from 'react';
+import HeaderBlog from "./headerBlog/headerBlog";
+import Advice from "./advice/advice";
+import AdviceTo from "./agviceTo/adviceTo";
+import View from "./view/view";
 
 const Blog = () => {
     return (
         <div id='blog'>
-            <div className="container">
-                <div className="blog">
-                    <h1 style={{color:'white'}}>blog</h1>
-                </div>
-            </div>
+            <HeaderBlog/>
+            <Advice/>
+            <AdviceTo/>
+            <View/>
         </div>
     );
 };
