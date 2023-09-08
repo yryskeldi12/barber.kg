@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import Header from "./components/Header/header";
-import {Route, Routes} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Barbers from "../src/components/Barbers/barbers";
 import Salon from "./components/Salon/salon";
 import Blog from "./components/Blog/blog";
