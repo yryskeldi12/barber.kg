@@ -8,13 +8,10 @@ import Home from "./components/Home/home";
 import Footer from "./components/Footer/footer";
 
 
-
-
 const App = () => {
     return (
         <div>
           <Header/>
-            <Home/>
             <Routes>
                <Route path="barbers" element={<Barbers/>}/>
                <Route path="salon" element={<Salon/>}/>
