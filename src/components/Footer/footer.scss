@@ -1,7 +1,8 @@
-#footer{
+#footer {
   padding: 5% 0 10% 0;
-  .footer{
-    h1{
+
+  .footer {
+    h1 {
       text-align: center;
       color: #FFF;
       leading-trim: both;
@@ -14,19 +15,22 @@
       font-variant: small-caps;
       letter-spacing: -0.2px;
     }
-    &--text{
+
+    &--text {
       margin: 0 0 0 159px;
       display: flex;
       align-items: center;
       justify-content: center;
-      &__name{
+
+      &__name {
         width: 374px;
         height: 140px;
-       display: flex;
+        display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: center;
-        h2{
+
+        h2 {
           color: #FFF;
           font-family: Montserrat, sans-serif;
           font-size: 24px;
@@ -35,7 +39,8 @@
           font-variant: small-caps;
           letter-spacing: -0.2px;
         }
-        h3{
+
+        h3 {
           color: #FFF;
           font-family: Montserrat, sans-serif;
           font-size: 20px;
@@ -47,4 +52,27 @@
       }
     }
   }
+}
+@media (max-width: 768px) {
+  #footer .footer--text {
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+  }
+  #footer .footer--text__name {
+    width: 374px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  #footer .footer--text__name {
+    height: 93px;
+  }
+
 }
