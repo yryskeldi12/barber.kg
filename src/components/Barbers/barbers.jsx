@@ -18,6 +18,22 @@ const Barbers = () => {
       </div>
     </div>
   );
+import React from 'react';
+import './barbers.scss'
+import Master from './Master/master';
+import Recom from './Recom/Recom';
+import Price from "./price/price";
+
+
+
+const Barbers = () => {
+    return (
+        <div id='barbers'>
+            <Recom/>
+            <Master/>
+            <Price/>
+                </div>
+    );
 };
 
 export default Barbers;

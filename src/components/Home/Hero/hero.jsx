@@ -34,6 +34,8 @@ const Hero = () => {
             <span>нами.</span>
           </p>
           </div>
+
+        </div>
       </div>
     </div>
   );
