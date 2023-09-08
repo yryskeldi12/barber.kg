@@ -1,18 +1,18 @@
 import React from 'react';
-import Functional from "./functional/functional";
-import Questions from "./Questions/questions";
 import Hero from './Hero/hero';
+import Functional from "./functional/functional";
+import Advantages from "./advantages/advantages";
+import Platform from "./platform/platform";
 
 const Home = () => {
     return (
-        <div  id='home'>
+        <div id='home'>
             <div className="container">
+                <Hero/>
                 <Functional/>
-                <Questions/>
-                <div className="home">
-                    {/* <h1 style={{color:'white'}}>home</h1> */}
-                   <Hero/>
-                </div>
+                <Advantages/>
+                <Platform/>
+
             </div>
         </div>
     );
