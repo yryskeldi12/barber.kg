@@ -1,0 +1,310 @@
+#master {
+    padding: 40px 0;
+
+    .master {
+
+        &-filtr {
+            width: 600px;
+            height: 320px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            background: #282828;
+            padding: 39px 0 0 30px;
+            background-image: url("./masterImg/trac.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            position: fixed;
+            left: 35%;
+            top: 30%;
+            right: 0;
+
+
+
+            &:hover {
+                // background: rgba(198, 198, 205, 0.182);
+                background-image: url("./masterImg/trac.png");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            button {
+                color: var(--WHITE, #FFF);
+                leading-trim: both;
+                text-edge: cap;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                display: inline-flex;
+                padding: 6px 20px;
+                align-items: center;
+                border-radius: 4px;
+                border: 1px solid var(--WHITE, #FFF);
+                background: transparent;
+                margin: 50px 0 0 75%;
+                cursor: pointer;
+            }
+
+            h4 {
+                color: #FFF;
+                font-size: 30px;
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                cursor: pointer;
+            }
+
+
+            &_option {
+                flex-direction: column;
+                background: none;
+                outline: none;
+                border: none;
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                select {
+                    display: flex;
+                    background: none;
+                    outline: none;
+                    border: none;
+                    margin: 30px 0;
+                    color: #FFF;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            &_salon {
+                display: flex;
+                align-items: center;
+                padding-bottom: 40px;
+
+                &-chek {
+                    display: flex;
+                    border: none;
+                    outline: none;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 30px;
+                    padding-bottom: 6px;
+                    border-bottom: 2px solid rgb(243, 231, 231);
+
+                    h2 {
+                        color: var(--Rectangle-70, #FFF);
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                    }
+
+                    input {
+                        width: 20px;
+                        height: 20px;
+                        margin: 0 10px;
+                    }
+                }
+            }
+
+            &_do {
+                display: flex;
+                align-items: center;
+
+                input {
+                    width: 90px;
+                    height: 20px;
+                    margin-right: 40px;
+                    padding-left: 10px;
+                    background: transparent;
+                    outline: none;
+                    border: none;
+                    border-bottom: 2px solid white;
+                    color: var(--Rectangle-70, #FFF);
+
+                    /* mon */
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+
+                }
+
+            }
+        }
+
+        &-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+
+            h1 {
+                color: #fff;
+                font-size: 20px;
+            }
+
+            &_p {
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                border-bottom: 2px solid white;
+
+                h2 {
+                    color: #fff;
+                    font-size: 18px;
+                    padding-right: 10px;
+                }
+
+                h3 {
+                    color: #fff;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &-block {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 13px;
+            padding-top: 30px;
+
+            &_line {
+                width: 1104px;
+                height: 2px;
+                background: rgb(76, 75, 75);
+                margin: 10px 0;
+            }
+
+            button {
+                color: #676767;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                border-radius: 8px;
+                padding: 10px 38px;
+                gap: 16px;
+                background: transparent;
+                outline: none;
+                border: 2px solid rgb(66, 64, 64);
+                cursor: pointer;
+            }
+
+            &_img {
+                position: relative;
+                border: 2px solid rgb(76, 75, 75);
+                padding: 10px;
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    display: inline-block;
+                    overflow: hidden;
+                    position: relative;
+                    // width: 300px;
+                    // height: 500px;
+                    transition: transform 1s, filter 1s, brightness 1s;
+                    filter: grayscale(100%);
+                    object-fit: cover;
+                }
+
+                &:hover img {
+                    position: relative;
+                    transform: scale(1.5);
+                    filter: grayscale(10%);
+                    object-fit: cover;
+
+                }
+
+
+                &-name {
+                    position: absolute;
+                    bottom: 25px;
+                    left: 20px;
+
+                    h1 {
+                        color: #FFF;
+                        font-family: Montserrat;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+
+                    }
+
+                    &_star {
+                        display: flex;
+                        align-items: center;
+
+                        h5 {
+                            font-size: 30px;
+                            color: #FFF;
+                            padding-right: 7px;
+                        }
+
+                        p {
+                            color: #FFF;
+                            font-family: Montserrat;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+
+                    &_btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        h3 {
+                            color: #FFF;
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            padding-right: 110px;
+                        }
+
+                        button {
+                            color: #FFF;
+                            font-family: Montserrat;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: normal;
+                            display: inline-flex;
+                            padding: 6px 15px;
+                            align-items: center;
+                            border-radius: 6px;
+                            border: 1px solid #FFF;
+                            background: transparent;
+                            cursor: pointer;
+                        }
+                    }
+
+                    h2 {
+                        color: #FFF;
+                        font-family: Open Sans;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+}
