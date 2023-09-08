@@ -10,12 +10,14 @@ import Platform from "./platform/platform";
 const Home = () => {
     return (
         <div  id='home'>
+            <div className="container">
                 <Hero/>
                 <Functional/>
                 <Advantages/>
                 <Platform/>
                 <Salons/>
                 <Questions/>
+            </div>
         </div>
     );
 };
