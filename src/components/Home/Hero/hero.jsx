@@ -22,9 +22,9 @@ const Hero = () => {
     }
   }, 5000);
   return (
-    <div style={{ background: `url(${str})`, transition: "4s" }} id="hero">
+    <div  id="hero">
       <div className="container">
-        <div className="hero">
+        <div style={{ background: `url(${str})`, transition: "4s" }} className="hero">
           <h1>
             Барбершопы: найди лучший <br /> салон у себя в городе
           </h1>

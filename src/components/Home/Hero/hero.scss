@@ -1,45 +1,51 @@
-#hero{
-    .hero{
-        margin-top: -135px;
-        margin-left: -75px;
-        height: 800px;
-        width: 1400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        h1{
-            color: #F1F1F1;
-text-align: center;
+#hero {
+    .container {
+        width: 1440px;
 
-font-family: Montserrat,sans-serif;
-font-size: 64px;
-font-style: normal;
-font-weight: 400;
-line-height: 130%;
-letter-spacing: -0.2px;
-text-transform: capitalize;
-        }
-        p{
-            color: #F1F1F1;
-text-align: center;
-font-family: Montserrat, sans-serif;
-font-size: 22px;
-font-style: normal;
-font-weight: 400;
-line-height: 130%;
-font-variant: small-caps;
-letter-spacing: -0.2px;
-span{
-    opacity: 0.8;
-color: var(--red, #D22B43);
-font-family: Montserrat, sans-serif;
-font-size: 22px;
-font-style: normal;
-font-weight: 400;
-line-height: 130%;
-font-variant: small-caps;
-letter-spacing: -0.2px;
-}
+        .hero {
+            margin-top: -135px;
+            height: 800px;
+            width: 1440px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                color: #F1F1F1;
+                text-align: center;
+
+                font-family: Montserrat, sans-serif;
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+                letter-spacing: -0.2px;
+                text-transform: capitalize;
+            }
+
+            p {
+                color: #F1F1F1;
+                text-align: center;
+                font-family: Montserrat, sans-serif;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+                font-variant: small-caps;
+                letter-spacing: -0.2px;
+
+                span {
+                    opacity: 0.8;
+                    color: var(--red, #D22B43);
+                    font-family: Montserrat, sans-serif;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 130%;
+                    font-variant: small-caps;
+                    letter-spacing: -0.2px;
+                }
+            }
         }
     }
 }
