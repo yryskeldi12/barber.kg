@@ -6,20 +6,10 @@ import Salon from "./components/Salon/salon";
 import Blog from "./components/Blog/blog";
 import Home from "./components/Home/home";
 import Footer from "./components/Footer/footer";
+import Anketa from "./components/Anketa/anketa";
 
 const App = () => {
-  return (
-    <div>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="barbers" element={<Barbers />} />
-        <Route path="salon" element={<Salon />} />
-        <Route path="blog" element={<Blog />} />
-      </Routes>
-      <Footer />
-    </div>
-  );
+
     return (
         <div>
           <Header/>
@@ -29,6 +19,7 @@ const App = () => {
                <Route path="salon" element={<Salon/>}/>
                <Route path="blog" element={<Blog/>}/>
             </Routes>
+            <Anketa/>
             <Footer/>
         </div>
     );

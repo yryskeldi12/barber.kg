@@ -313,44 +313,44 @@ const Master = () => {
             <button> Посмотреть на всех</button>
             {/* ///////// */}
           </div>
-          <div onClick={() => setFiltr(true)} className="master-filtr">
-            <div className="master-filtr_option">
-              <select>
-                <option>Район</option>
-                <option>Район</option>
-                <option>Район</option>
-                <option>Район</option>
-              </select>
-              <select>
-                <option>Рейтинг</option>
-                <option>Рейтинг</option>
-                <option>Рейтинг</option>
-                <option>Рейтинг</option>
-              </select>
-            </div>
-            <div className="master-filtr_salon">
-              <div className="master-filtr_salon-chek">
-                <h2>Салон</h2>
-                <input type="checkbox" />
-              </div>
-              <div className="master-filtr_salon-chek">
-                <h2>Частный мастер</h2>
-                <input type="checkbox" />
-              </div>
-            </div>
-            <div className="master-filtr_do">
-              <div>
-                <input type="text" placeholder=" от 0 сом" />
-              </div>
-              <div>
-                <input type="text" placeholder=" до 0 сом" />
-              </div>
-            </div>
-            <button>Применить</button>
-            <h4 onClick={() => setNon(true)}>
-              <GrFormClose />
-            </h4>
-          </div>
+          {/*<div onClick={() => setFiltr(true)} className="master-filtr">*/}
+          {/*  <div className="master-filtr_option">*/}
+          {/*    <select>*/}
+          {/*      <option>Район</option>*/}
+          {/*      <option>Район</option>*/}
+          {/*      <option>Район</option>*/}
+          {/*      <option>Район</option>*/}
+          {/*    </select>*/}
+          {/*    <select>*/}
+          {/*      <option>Рейтинг</option>*/}
+          {/*      <option>Рейтинг</option>*/}
+          {/*      <option>Рейтинг</option>*/}
+          {/*      <option>Рейтинг</option>*/}
+          {/*    </select>*/}
+          {/*  </div>*/}
+          {/*  <div className="master-filtr_salon">*/}
+          {/*    <div className="master-filtr_salon-chek">*/}
+          {/*      <h2>Салон</h2>*/}
+          {/*      <input type="checkbox" />*/}
+          {/*    </div>*/}
+          {/*    <div className="master-filtr_salon-chek">*/}
+          {/*      <h2>Частный мастер</h2>*/}
+          {/*      <input type="checkbox" />*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*  <div className="master-filtr_do">*/}
+          {/*    <div>*/}
+          {/*      <input type="text" placeholder=" от 0 сом" />*/}
+          {/*    </div>*/}
+          {/*    <div>*/}
+          {/*      <input type="text" placeholder=" до 0 сом" />*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*  <button>Применить</button>*/}
+          {/*  <h4 onClick={() => setNon(true)}>*/}
+          {/*    <GrFormClose />*/}
+          {/*  </h4>*/}
+          {/*</div>*/}
         </div>
       </div>
     </div>
