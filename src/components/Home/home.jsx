@@ -7,19 +7,18 @@ import Questions from "./Questions/questions";
 import Salons from "./Salons";
 
 const Home = () => {
-  return (
-    <div id="home">
-      <div className="container">
-        <Hero />
-        <Functional />
-        <Advantages />
-        <Platform />
-
-        <Salons />
-        <Questions />
-      </div>
-    </div>
-  );
+    return (
+        <div id='home'>
+            <div className="container">
+                <Hero/>
+                <Functional/>
+                <Advantages/>
+                <Platform/>
+                <Salons/>
+                <Questions/>
+            </div>
+        </div>
+    );
 };
 
 export default Home;

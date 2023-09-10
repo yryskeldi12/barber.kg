@@ -3,6 +3,7 @@ import "./hero.scss";
 import img from "../Hero/heroImg/0.png";
 import img1 from "../Hero/heroImg/1.jpg";
 import img2 from "../Hero/heroImg/2.png";
+
 const Hero = () => {
   const [hero, setHero] = useState(1);
   let str = img;
@@ -34,7 +35,6 @@ const Hero = () => {
             <span>нами.</span>
           </p>
           </div>
-
         </div>
       </div>
   );
