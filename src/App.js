@@ -6,6 +6,7 @@ import Salon from "./components/Salon/salon";
 import Blog from "./components/Blog/blog";
 import Home from "./components/Home/home";
 import Footer from "./components/Footer/footer";
+import LoginForm from "./components/loginForm/loginForm";
 
 const App = () => {
   return (
@@ -17,21 +18,10 @@ const App = () => {
         <Route path="salon" element={<Salon />} />
         <Route path="blog" element={<Blog />} />
       </Routes>
+        <LoginForm/>
       <Footer />
     </div>
   );
-    return (
-        <div>
-          <Header/>
-            <Home/>
-            <Routes>
-               <Route path="barbers" element={<Barbers/>}/>
-               <Route path="salon" element={<Salon/>}/>
-               <Route path="blog" element={<Blog/>}/>
-            </Routes>
-            <Footer/>
-        </div>
-    );
 };
 
 export default App;
