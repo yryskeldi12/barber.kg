@@ -6,6 +6,7 @@ import Salon from "./components/Salon/salon";
 import Blog from "./components/Blog/blog";
 import Home from "./components/Home/home";
 import Footer from "./components/Footer/footer";
+import Profil from "./components/Barbers/Master/Profil/profil";
 
 const App = () => {
   return (
@@ -16,22 +17,11 @@ const App = () => {
         <Route path="barbers" element={<Barbers />} />
         <Route path="salon" element={<Salon />} />
         <Route path="blog" element={<Blog />} />
+        <Route path="profil" element={<Profil/>} />
       </Routes>
       <Footer />
     </div>
   );
-    return (
-        <div>
-          <Header/>
-            <Home/>
-            <Routes>
-               <Route path="barbers" element={<Barbers/>}/>
-               <Route path="salon" element={<Salon/>}/>
-               <Route path="blog" element={<Blog/>}/>
-            </Routes>
-            <Footer/>
-        </div>
-    );
 };
 
 export default App;
