@@ -33,9 +33,9 @@ const Recom = () => {
     }
     
     return (
-        <div style={{background:`url(${img})`}} id='recom'>
+        <div  id='recom'>
             <div className="container">
-                <div className="recom">
+                <div style={{background:`url(${img})`}} className="recom">
                     <div className="recom--hello">
                     <div className="recom--hello__recom-text">
                         <h1>Опыт работы с волосами,как ни у кого другого</h1>
