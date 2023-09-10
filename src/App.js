@@ -7,6 +7,7 @@ import Blog from "./components/Blog/blog";
 import Home from "./components/Home/home";
 import Footer from "./components/Footer/footer";
 import Profil from "./components/Barbers/Master/Profil/profil";
+import LoginForm from "./components/loginForm/loginForm";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="blog" element={<Blog />} />
         <Route path="profil" element={<Profil/>} />
       </Routes>
+        <LoginForm/>
       <Footer />
     </div>
   );
