@@ -1,17 +1,16 @@
 import React from 'react';
 import './leapard.scss'
-import img from './img/Group 114.png'
-import img1 from './img/Rectangle 156.png'
 import {AiOutlineStar} from 'react-icons/ai'
+import img1 from "../leapard/img/Rectangle 156.png"
 const Leapard = () => {
     return (
-        <div   id="leapard">
+        <div id="leapard">
             <div  className="container">
-                <div style={{background:`url(${img})` , height:'1170px'}} className="leapard">
+                <div  className="leapard">
                     <h1>барбершопы</h1>
                     <div className="leapard--text">
                         <div className='leapard--text__texts'>
-                            <div style={{background:`url(${img1})`}} className="leapard--text__texts--block">
+                            <div className="leapard--text__texts--block">
                                 <h3>Барбершоп</h3>
                                 <h4><AiOutlineStar style={{fontSize:"23px"}}/>4.7</h4>
                                 <div className="leapard--text__texts--block__block-text">
@@ -20,7 +19,8 @@ const Leapard = () => {
                                 </div>
 
                             </div>
-                            <div style={{background:`yellow`}} className="leapard--text__texts--block">
+                            <div  className="leapard--text__texts--block">
+                                <img src={img1} alt=""/>
                                 <h3>Барбершоп</h3>
                                 <h4><AiOutlineStar style={{fontSize:"23px"}}/>4.5</h4>
                                 <div className="leapard--text__texts--block__block-text">
