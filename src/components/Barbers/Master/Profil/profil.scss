@@ -1,7 +1,178 @@
 #profil {
+    padding: 50px 0 0 0;
+
     .profil {
-        h1 {
-            color: white;
+        display: flex;
+
+        &-img {
+            .img1 {
+                width: 400px;
+                height: 423px;
+            }
+
+            &_lx {
+                padding: 10px 0 0 0;
+
+                img {
+                    margin-right: 18px;
+                    width: 85px;
+                    height: 96.308px;
+                    flex-shrink: 0;
+                }
+            }
+
+            &_btn {
+                display: flex;
+                align-items: center;
+                padding: 20px 0 0 0;
+
+                label {
+                    display: flex;
+                    width: 240px;
+                    height: 30px;
+                    padding: 16px 24px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                    border-radius: 4px;
+                    background: var(--red, #D22B43);
+                    color: #FFF;
+                    font-family: Montserrat;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    border: none;
+                    margin-right: 14px;
+                    cursor: pointer;
+                }
+
+                h1 {
+                    width: 85px;
+                    height: 57.785px;
+                    flex-shrink: 0;
+                    background: #FFF;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        &-block {
+            padding-left: 80px;
+
+            p {
+                width: 622px;
+                height: 200px;
+                flex-shrink: 0;
+                overflow: hidden;
+                color: var(--WHITE, #FFF);
+                text-overflow: ellipsis;
+                font-family: Open Sans;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+                border-bottom: 1px solid #D22B43;
+                padding: 14px 0 0 0;
+            }
+
+            &_star {
+                h1 {
+                    width: 302px;
+                    height: 49px;
+                    overflow: hidden;
+                    color: #FFF;
+                    text-overflow: ellipsis;
+                    whitespace: nowrap;
+                    font-family: Montserrat;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    padding-top: 20px;
+                }
+
+                h4 {
+                    width: 512px;
+                    height: 19px;
+                    overflow: hidden;
+                    color: #ffffffc5;
+                    text-overflow: ellipsis;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding: 10px 0;
+                }
+
+                &-lia {
+                    display: flex;
+                    align-items: center;
+                    padding-top: 10px;
+
+
+                    h3 {
+                        color: #FFF;
+                        font-family: Montserrat;
+                        font-size: 26px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        stroke-width: 1px;
+                        stroke: #FFF;
+                        margin-right: 10px;
+                    }
+
+                    h2 {
+                        color: #FFF;
+                        font-family: Montserrat;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+
+            &_barber {
+                &-item {
+                    &_sort {
+                        display: flex;
+                        align-items: center;
+                                justify-content: start;
+                        padding-top: 20px;
+
+                        h1 {
+                            color: var(--WHITE, #ffffffb4);
+                            font-family: Montserrat;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                            margin-right: 20px;
+                            width: 200px;
+
+                        }
+
+                        h2 {
+                            color: var(--WHITE, #FFF);
+                            font-family: Montserrat;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                        }
+                    }
+                }
+
+
+
+            }
+
         }
     }
 }
