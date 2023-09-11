@@ -8,7 +8,11 @@ import Home from "./components/Home/home";
 import Footer from "./components/Footer/footer";
 import Profil from "./components/Barbers/Master/Profil/profil";
 import LoginForm from "./components/loginForm/loginForm";
-import Anketa from "./components/Anketa/anketa";
+import Herosalon from "./components/Salon/herosalon/herosalon";
+import Leapardsalon from "./components/Salon/leapardsalon/leapardsalon";
+
+const App = () => {
+ 
 
 const App = () => {
     return (
