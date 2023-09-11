@@ -9,11 +9,15 @@ import Footer from "./components/Footer/footer";
 import Anketa from "./components/Anketa/anketa";
 import Profil from "./components/Barbers/Master/Profil/profil";
 import LoginForm from "./components/loginForm/loginForm";
+import Herosalon from "./components/Salon/herosalon/herosalon";
+import Leapardsalon from "./components/Salon/leapardsalon/leapardsalon";
 
 const App = () => {
   return (
     <div>
-      <Header />
+      <Header/>
+        {/*<Herosalon/>*/}
+        {/*<Leapardsalon/>*/}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="barbers" element={<Barbers />} />
@@ -22,7 +26,7 @@ const App = () => {
         <Route path="profil" element={<Profil/>} />
         <Route path="enter" element={<LoginForm/>} />
       </Routes>
-      <Footer />
+      <Footer/>
     </div>
   );
 };
