@@ -1,0 +1,164 @@
+#recall {
+    padding: 80px 0;
+
+    h1 {
+        color: var(--Rectangle-70, #FFF);
+        text-align: start;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+
+    .block {
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: red;
+            color: #1C1C1E;
+            border: none;
+            outline: none;
+            width: 80px;
+            height: 30px;
+            margin: 20px 0 0 300px;
+
+        }
+
+        &-text {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                border: none;
+                outline: none;
+                background: red;
+            }
+
+            span {
+                color: #FFF;
+                font-size: 18px;
+            }
+        }
+
+        &-title {
+            border-bottom: 1px solid red;
+            width: 400px;
+            display: flex;
+
+            h1 {
+                color: #FFF;
+                font-size: 30px;
+            }
+        }
+
+    }
+
+    .recall {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0 0 0;
+
+
+        &-rec {
+            &_input {
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                input {
+                    display: flex;
+                    width: 413px;
+                    padding: 6px 0px;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    outline: none;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid #FFF;
+
+
+                }
+
+                span {
+                    color: #FFF;
+                    right: 6px;
+                    position: absolute;
+                }
+            }
+        }
+
+        &-comment {
+
+            &_one {
+                width: 670px;
+                height: 80px;
+                flex-shrink: 0;
+                background: #1C1C1E;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 20px 0;
+
+                img {
+                    padding-left: 20px;
+                }
+
+                p {
+                    width: 459px;
+                    height: 60px;
+                    flex-shrink: 0;
+                    overflow: hidden;
+                    color: var(--Rectangle-70, #FFF);
+                    text-overflow: ellipsis;
+                    whitespace: nowrap;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+
+                &-tit {
+
+                    h3 {
+                        color: var(--Rectangle-70, #FFF);
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                    }
+
+                    &_lia {
+                        display: flex;
+                        align-items: start;
+                        justify-content: center;
+
+                        h3 {
+                            font-size: 20px;
+                            color: #FFF;
+                        }
+
+                        h2 {
+                            color: #FFF;
+                            font-family: Montserrat;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

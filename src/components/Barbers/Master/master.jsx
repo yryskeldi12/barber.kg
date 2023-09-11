@@ -43,7 +43,7 @@ const Master = () => {
                 <h2>Барбер</h2>
                 <div className="master-block_img-name_btn">
                   <h3>От 150 сомов</h3>
-                  <NavLink to="profil" >
+                  <NavLink to={"/profil"} >
                     <button>Смотреть</button>
                   </NavLink>
                 </div>
