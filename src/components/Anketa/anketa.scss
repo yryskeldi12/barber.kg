@@ -1,0 +1,152 @@
+#anketa {
+  .anketa {
+    h1 {
+      font-family: Montserrat;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 49px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    &--text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__block {
+        &--input {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 333px;
+
+          input {
+            background: none;
+            width: 470px;
+            padding: 10px;
+            border-bottom: 1px solid #FFF;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            color: #FFFFFF;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            outline: none;
+          }
+
+          select {
+            background: none;
+            width: 490px;
+            padding: 10px;
+            border: none;
+            color: #FFFFFF;
+            border-bottom: 1px solid #FFF;
+            outline: none;
+            color: var(--Rectangle-70, #FFF);
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+
+          option {
+            border: none;
+            outline: none;
+            background: #282828;
+            color: var(--Rectangle-70, #FFF);
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+
+    &--text2 {
+      display: flex;
+      align-items: start;
+      justify-content: start;
+
+      &__block {
+        width: 300px;
+        h3 {
+          font-family: Montserrat;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 54px;
+          text-align: left;
+          color: #D22B43;
+        }
+      }
+
+      &__input {
+        input {
+          width: 437px;
+          height: 40px;
+          top: 691px;
+          left: 296px;
+          padding: 0;
+          border: 1px;
+          gap: 20px;
+          border: none;
+          outline: none;
+          color: white;
+          border-bottom: 1px solid #F3F3F3;
+          background: transparent;
+        }
+      }
+
+      &__input2 {
+        input {
+          width: 82px;
+          height: 40px;
+          top: 761px;
+          left: 297px;
+          padding: 10px 0 0 10px;
+          border: 1px;
+          margin-right: 30px;
+          gap: 10px;
+          border-bottom: 1px solid white;
+        }
+      }
+
+      &__input3 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        border-bottom: 1px solid white;
+        width: 100px;
+        margin-right: 30px;
+        padding-top: 30px;
+
+        h1 {
+          color: var(--Rectangle-70, #FFF);
+          font-family: Montserrat;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          margin-right: 10px;
+        }
+
+        input {
+          width: 20px;
+          height: 20px;
+          display: flex;
+          background: none;
+          align-items: center;
+        }
+      }
+      &__checkbox {
+        display: flex;
+      }
+    }
+  }
+}
