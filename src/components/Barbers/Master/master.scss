@@ -44,7 +44,7 @@
                 cursor: pointer;
             }
 
-            h4 {
+            p {
                 color: #FFF;
                 font-size: 30px;
                 position: absolute;
@@ -198,6 +198,12 @@
                 outline: none;
                 border: 2px solid rgb(66, 64, 64);
                 cursor: pointer;
+
+                &:hover {
+                    background: #676767;
+                    color: white;
+                    transition: .4s;
+                }
             }
 
             &_img {
@@ -290,7 +296,14 @@
                             border: 1px solid #FFF;
                             background: transparent;
                             cursor: pointer;
+
+                            &:hover {
+                                background: black;
+                                transition: .4s;
+                                border: black
+                            }
                         }
+
                     }
 
                     h2 {

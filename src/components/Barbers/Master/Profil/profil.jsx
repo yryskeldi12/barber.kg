@@ -10,13 +10,13 @@ import { FaPlus } from "react-icons/fa";
 import Servis from "../Servis/servis";
 
 const Profil = () => {
-  const [selectedFile, setSelectedFile] = useState(null);
+  const [file, setFile] = useState(null);
 
   
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
-    setSelectedFile(URL.createObjectURL(file));
+    setFile(URL.createObjectURL(file));
   };
 
   return (
@@ -26,7 +26,7 @@ const Profil = () => {
           <div className="profil-img">
             <img className="profil-img_img1" src={men1} alt="" />
             <div className="profil-img_lx">
-              <img src={selectedFile || lx1} alt="" />
+              <img src={file || lx1} alt="" />
               <img src={lx2} alt="" />
               <img src={lx3} alt="" />
               <img src={lx3} alt="" />

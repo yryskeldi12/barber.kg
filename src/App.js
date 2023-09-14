@@ -11,7 +11,7 @@ import LoginForm from "./components/loginForm/loginForm";
 import Herosalon from "./components/Salon/herosalon/herosalon";
 import Leapardsalon from "./components/Salon/leapardsalon/leapardsalon";
 
-const App = () => {
+
  
 
 const App = () => {
@@ -26,7 +26,6 @@ const App = () => {
                 <Route path="profil" element={<Profil/>}/>
                 <Route path="enter" element={<LoginForm/>}/>
             </Routes>
-            <Anketa/>
             <Footer/>
         </div>
     );

@@ -13,17 +13,30 @@
     }
 
     .block {
+        width: 400px;
+
         button {
             display: flex;
+            padding: 2px 18px;
             justify-content: center;
             align-items: center;
-            background: red;
-            color: #1C1C1E;
-            border: none;
-            outline: none;
-            width: 80px;
-            height: 30px;
-            margin: 20px 0 0 300px;
+            border: 2px solid var(--red, #D22B43);
+            color: var(--red, #D22B43);
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            font-variant: small-caps;
+            letter-spacing: -0.2px;
+            background: transparent;
+            margin: 10px 0 0 70%;
+
+            &:hover {
+                background: #D22B43;
+                color: #FFF;
+                transition: .4s;
+            }
 
         }
 
@@ -31,10 +44,14 @@
             display: flex;
             justify-content: space-between;
 
+
             input {
                 border: none;
                 outline: none;
-                background: red;
+                background: transparent;
+                color: #FFF;
+                font-size: 16px;
+                border-bottom: 1px solid white;
             }
 
             span {
@@ -44,7 +61,7 @@
         }
 
         &-title {
-            border-bottom: 1px solid red;
+            border-bottom: 1px solid white;
             width: 400px;
             display: flex;
 
@@ -63,6 +80,8 @@
 
 
         &-rec {
+           
+
             &_input {
                 display: flex;
                 align-items: center;
@@ -106,7 +125,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                margin: 20px 0;
+                margin-bottom: 20px;
 
                 img {
                     padding-left: 20px;
