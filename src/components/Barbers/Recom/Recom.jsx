@@ -8,6 +8,7 @@ import {AiOutlineStar} from 'react-icons/ai'
 import {IoIosArrowBack , IoIosArrowForward} from 'react-icons/io'
 
 import './Recom.scss'
+import { NavLink } from 'react-router-dom';
 
 const Recom = () => {
     const [slic ,setSlic] = useState(1)
@@ -53,7 +54,10 @@ const Recom = () => {
                             <p>{str3}</p>
                         </div>
                         <div className="recom--hello__block--blocks__flexs">
-                            <button>Смотреть</button>
+                            <NavLink to="/profil">
+                                <button>Смотреть</button>
+                            </NavLink>
+                            
                             <div className='recom--hello__block--blocks__flexs--icons'>
                                 <IoIosArrowBack onClick={() => slic === 1 ? setSlic(slic + 3) : setSlic(slic - 1)} style={{cursor:"pointer"}}/>
                                 <IoIosArrowForward onClick={() => slic === 4 ? setSlic(slic - 3) : setSlic(slic + 1)} style={{cursor:"pointer"}}/>
