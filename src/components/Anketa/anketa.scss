@@ -71,81 +71,162 @@
 
     &--text2 {
       display: flex;
-      align-items: start;
-      justify-content: start;
-
-      &__block {
-        width: 300px;
-        h3 {
-          font-family: Montserrat;
-          font-size: 20px;
-          font-weight: 400;
-          line-height: 54px;
-          text-align: left;
-          color: #D22B43;
-        }
-      }
-
-      &__input {
-        input {
-          width: 437px;
-          height: 40px;
-          top: 691px;
-          left: 296px;
-          padding: 0;
-          border: 1px;
-          gap: 20px;
-          border: none;
-          outline: none;
-          color: white;
-          border-bottom: 1px solid #F3F3F3;
-          background: transparent;
-        }
-      }
-
-      &__input2 {
-        input {
-          width: 82px;
-          height: 40px;
-          top: 761px;
-          left: 297px;
-          padding: 10px 0 0 10px;
-          border: 1px;
-          margin-right: 30px;
-          gap: 10px;
-          border-bottom: 1px solid white;
-        }
-      }
-
-      &__input3 {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 300px;
+      &__block{
         display: flex;
-        justify-content: start;
-        align-items: center;
-        border-bottom: 1px solid white;
-        width: 100px;
-        margin-right: 30px;
-        padding-top: 30px;
-
-        h1 {
+        //align-items: center;
+        justify-content: space-between;
+        width: 700px;
+        height: 40px;
+        h1{
+          color: var(--red, #D22B43);
+          font-family: Montserrat;
+          font-size: 23px;
+          font-style: normal;
+          font-weight: 400;
+        }
+        h2{
           color: var(--Rectangle-70, #FFF);
           font-family: Montserrat;
-          font-size: 16px;
+          font-size: 18px;
           font-style: normal;
           font-weight: 300;
-          line-height: normal;
-          margin-right: 10px;
         }
-
-        input {
-          width: 20px;
-          height: 20px;
-          display: flex;
+        input{
+          width: 350px;
+          color: #FFF;
+          font-family: Montserrat;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 300;
           background: none;
+          border: none;
+          outline: none;
+        }
+        div{
+          display: flex;
+          width: 437px;
+          padding: 10px;
           align-items: center;
+          gap: 20px;
+          border-bottom: 1px solid var(--f3, #F3F3F3);
         }
       }
-      &__checkbox {
+      &__block1{
         display: flex;
+        //align-items: center;
+        justify-content: space-between;
+        width: 484px;
+        height: 40px;
+        h1{
+          color: var(--red, #D22B43);
+          font-family: Montserrat;
+          font-size: 23px;
+          font-style: normal;
+          font-weight: 400;
+        }
+        div{
+          width: 240px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        input{
+          text-align: center;
+          width: 82px;
+          padding: 10px 10px 6px 10px;
+          border-bottom: 1px solid var(--f3, #F3F3F3);
+          border-left: none;
+          border-top: none;
+          border-right: none;
+          background: none;
+          color: var(--Rectangle-70, #FFF);
+          font-family: Montserrat;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 300;
+          outline: none;
+        }
+
+
+      }
+      &__block2{
+        display: flex;
+        //align-items: center;
+        justify-content: space-between;
+        width: 590px;
+        &--div{
+          display: flex;
+          justify-content: space-between;
+          width: 345px;
+          div{
+            height: 35px;
+            padding: 0 10px;
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #fff;
+          }
+        }
+        input[type='checkbox'] {
+          background: red;
+          width: 20px;
+          height: 20px;
+        }
+
+        h1{
+          color: var(--red, #D22B43);
+          font-family: Montserrat;
+          font-size: 23px;
+          font-style: normal;
+          font-weight: 400;
+        }
+        h2{
+          color: var(--Rectangle-70, #FFF);
+          font-family: Montserrat;
+          font-size: 18px;
+          font-weight: 300;
+        }
+
+      }
+      &__block3{
+        display: flex;
+        justify-content: space-between;
+        width: 746px;
+        &--arr{
+          display: flex;
+          justify-content: space-between;
+          width: 500px;
+          div{
+            display: flex;
+            height: 35px;
+            padding: 0 10px;
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #fff;
+          }
+        }
+        input{
+          width: 20px;
+          height: 20px;
+        }
+        h1{
+          color: var(--red, #D22B43);
+          font-family: Montserrat;
+          font-size: 23px;
+          font-style: normal;
+          font-weight: 400;
+        }
+        h2{
+          color: var(--Rectangle-70, #FFF);
+          font-family: Montserrat;
+          font-size: 18px;
+          font-weight: 300;
+        }
+
       }
     }
   }

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import img from './unsplash_IxmHiUC-yOw.jpg'
-import img1 from './Rectangle 93.png'
-import img2 from './1.png'
-import img3 from './2.png'
-import img4 from './3.png'
+import img from './img/unsplash_IxmHiUC-yOw.jpg'
+import img1 from './img/Rectangle 93.png'
+import img2 from './img/1.png'
+import img3 from './img/2.png'
+import img4 from './img/3.png'
 import {AiOutlineStar} from 'react-icons/ai'
 import {IoIosArrowBack , IoIosArrowForward} from 'react-icons/io'
 

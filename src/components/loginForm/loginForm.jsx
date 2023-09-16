@@ -1,16 +1,26 @@
 import React, { useState } from 'react';
 import './loginForm.scss';
+import {GoogleLogin} from "@react-oauth/google";
 import c1img from '../../../src/components/loginForm/img/c1img.png';
 import c2img from '../../../src/components/loginForm/img/c2img.png';
 import {IoIosArrowBack} from "react-icons/io";
-import {NavLink} from "react-router-dom";
+
+
+const clientId = "187515703227-ipki1jn6tmq5c6dprpq5la00sqndm0aj.apps.googleusercontent.com"
 
 const LoginForm = () => {
+    const clientId = "187515703227-ipki1jn6tmq5c6dprpq5la00sqndm0aj.apps.googleusercontent.com"
     const [reverse , setReverse] = useState(true)
     const [none , setNone] = useState(false)
     const [isMasterMode, setIsMasterMode] = useState(true);
     const [toggleState, setToggleState] = useState(1);
+    const oneSucces = (res) => {
 
+        console.log('Current user:', res.profileobg)
+    }
+    const onFailure = (res) => {
+        console.log('login failed',res)
+    }
     const toggleMode = () => {
         setIsMasterMode(!isMasterMode);
         setToggleState(toggleState === 1 ? 2 : 1);
@@ -61,7 +71,14 @@ const LoginForm = () => {
                         <div style={{marginLeft:`${hello}%`, transition: '0.6s'}} className="login--cnt__c1">
                             <h1 style={{transition:"1s"}}>{none ? 'Войти' : 'Регистрация'}</h1>
                             <p>{none ? 'Заполните данные для того что-бы Войти' : 'Заполните данные для регистрации'}</p>
-                            <button className="login--cnt__c1--google">Вход через Google</button>
+                            <button
+                                className="login--cnt__c1--google"
+                                clientId={clientId}
+                                onSucces={oneSucces}
+                                onFailure={onFailure}
+                                cookiePolicy={'single_host'}
+                                isSignedIn={true}
+                            >Вход через Google</button>
                             <h2>Или</h2>
                             <input
                                 type="text"
