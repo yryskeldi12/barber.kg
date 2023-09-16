@@ -33,8 +33,8 @@ const LoginForm = () => {
         str = c2img
     }
 
-    const hello = toggleState === 1 ? 6 : -106;
-    const lol = toggleState === 1 ? 0 : 56.1;
+    const hello = toggleState === 1 ? 65 : -1370;
+    const lol = toggleState === 1 ? 0 : 729;
     return (
         <div id="login">
             <div className="container">
@@ -66,9 +66,9 @@ const LoginForm = () => {
                         </div>
                     </div>
                     <div className="login--cnt">
-                        <div style={{marginLeft:`${lol}%`, transition: '0.6s' , background:`url(${str})`}} className="login--cnt__images">
+                        <div style={{marginLeft:`${lol}px`, transition: '0.6s' , background:`url(${str})`}} className="login--cnt__images">
                         </div>
-                        <div style={{marginLeft:`${hello}%`, transition: '0.6s'}} className="login--cnt__c1">
+                        <div style={{marginLeft:`${hello}px`, transition: '0.6s'}} className="login--cnt__c1">
                             <h1 style={{transition:"1s"}}>{none ? 'Войти' : 'Регистрация'}</h1>
                             <p>{none ? 'Заполните данные для того что-бы Войти' : 'Заполните данные для регистрации'}</p>
                             <button
