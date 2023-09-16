@@ -4,13 +4,10 @@
       margin-top: 70px;
       margin-bottom: 30px;
       color: #fff;
-      leading-trim: both;
-      text-edge: cap;
-      font-family: Montserrat;
+      font-family: Montserrat, sans-serif;
       font-size: 24px;
-      font-style: normal;
       font-weight: 400;
-      line-height: 130%; /* 31.2px */
+      line-height: 130%;
       font-variant: small-caps;
       letter-spacing: -0.2px;
       text-align: center;
@@ -18,59 +15,150 @@
 
     &--text {
       display: flex;
+      align-items: center;
       flex-wrap: wrap;
       justify-content: center;
 
-      &__block {
-        margin: 20px;
-        width: 542px;
-        height: 240px;
+      &__blocks {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &--block {
+          margin: 20px;
+          width: 542px;
+          height: 240px;
 
-        flex-shrink: 0;
-        border-radius: 8px 8px 3px 3px;
-        // border: 2px solid #282828;
-        border-top: 2px solid #0a0909;
-        border-left: 2px solid #0a0909;
-        border-right: 2px solid #0a0909;
+          flex-shrink: 0;
+          border-radius: 8px 8px 3px 3px;
+          border-top: 2px solid #0a0909;
+          border-left: 2px solid #0a0909;
+          border-right: 2px solid #0a0909;
 
-        &:hover {
-          border-top: 2px solid #282828;
-          border-left: 2px solid #282828;
-          border-right: 2px solid #282828;
-        }
+          &:hover {
+            border-top: 2px solid #282828;
+            border-left: 2px solid #282828;
+            border-right: 2px solid #282828;
+          }
 
-        h2 {
-          margin-left: 30px;
-          margin-top: 40px;
-          color: #fff;
-          leading-trim: both;
-          text-edge: cap;
-          font-family: Montserrat;
-          font-size: 28px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 130%; /* 36.4px */
-          font-variant: small-caps;
-          letter-spacing: -0.2px;
-        }
+          h2 {
+            margin-left: 30px;
+            margin-top: 40px;
+            color: #fff;
+            font-family: Montserrat, sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 130%;
+            font-variant: small-caps;
+            letter-spacing: -0.2px;
+          }
 
-        p {
-          margin-left: 30px;
-          margin-top: 10px;
-          color: #fff;
-          leading-trim: both;
-          text-edge: cap;
-          font-family: Montserrat;
-          font-size: 24px;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 130%; /* 31.2px */
-          font-variant: small-caps;
-          letter-spacing: -0.2px;
-          width: 440px;
+          p {
+            margin-left: 30px;
+            margin-top: 10px;
+            color: #fff;
+            font-family: Montserrat, sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 130%;
+            font-variant: small-caps;
+            letter-spacing: -0.2px;
+            width: 440px;
+          }
         }
       }
     }
+  }
+}
+@media (max-width: 1240px) {
+  .container{
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+  #functional .functional--text__blocks--block {
+    width: 45%;
+  }
+}
+@media (max-width: 1024px) {
+  #functional .functional--text__blocks--block {
+    width: 50%;
+  }
+  #functional .functional--text__blocks {
+    justify-content: center;
+  }
+  #functional .functional--text__blocks--block h2 {
+    font-size: 26px;
+  }
+  #functional .functional--text__blocks--block p {
+    font-size: 22px;
+    width: 313px;
+  }
+}
+@media (max-width: 820px) {
+  #functional .functional--text__blocks--block p {
+    width: 255px;
+    font-size: 20px;
+  }
+  #functional .functional--text__blocks--block h2 {
+    margin-top: 30px;
+    font-size: 22px;
+  }
+  #functional .functional--text__blocks--block {
+    height: 195px;
+    margin: 0 10px 20px 15px;
+  }
+}
+@media (max-width: 576px) {
+  #functional .functional--text__blocks {
+    flex-wrap: wrap;
+  }
+  #functional .functional--text__blocks--block p {
+    width: 290px;
+    font-size: 20px;
+  }
+  #functional .functional--text__blocks--block {
+    height: 156px;
+    margin: 0 10px 32px 15px;
+    width: 355px;
+  }
+}
+@media (max-width: 400px) {
+  #functional .functional--text__blocks--block {
+    height: 156px;
+    width: 324px;
+    margin-bottom: 20px;
+  }
+  #functional .functional--text__blocks--block p {
+    width: 285px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 375px) {
+  #functional .functional--text__blocks--block {
+    height: 136px;
+    width: 324px;
+    margin: 0 0 20px 0;
+  }
+}
+@media (max-width: 320px) {
+  #functional .functional--text__blocks--block {
+    height: 120px;
+    width: 265px;
+    margin: 0 0 25px 0;
+  }
+  #functional .functional--text__blocks--block p {
+    width: 230px;
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  #functional .functional--text__blocks--block h2{
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  #functional .functional h1 {
+    margin-bottom: 20px;
+    font-size: 22px;
   }
 }
 

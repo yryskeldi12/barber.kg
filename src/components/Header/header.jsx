@@ -32,7 +32,9 @@ const Header = () => {
               <option>EN</option>
             </select>
             <LuBookmark className="header--right__bookmark" />
-            <button>Войти</button>
+            <NavLink to='enter'>
+              <button>Войти</button>
+            </NavLink>
           </div>
         </div>
       </div>

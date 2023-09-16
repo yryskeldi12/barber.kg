@@ -1,0 +1,183 @@
+#recall {
+    padding: 80px 0;
+
+    h1 {
+        color: var(--Rectangle-70, #FFF);
+        text-align: start;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+
+    .block {
+        width: 400px;
+
+        button {
+            display: flex;
+            padding: 2px 18px;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid var(--red, #D22B43);
+            color: var(--red, #D22B43);
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            font-variant: small-caps;
+            letter-spacing: -0.2px;
+            background: transparent;
+            margin: 10px 0 0 70%;
+
+            &:hover {
+                background: #D22B43;
+                color: #FFF;
+                transition: .4s;
+            }
+
+        }
+
+        &-text {
+            display: flex;
+            justify-content: space-between;
+
+
+            input {
+                border: none;
+                outline: none;
+                background: transparent;
+                color: #FFF;
+                font-size: 16px;
+                border-bottom: 1px solid white;
+            }
+
+            span {
+                color: #FFF;
+                font-size: 18px;
+            }
+        }
+
+        &-title {
+            border-bottom: 1px solid white;
+            width: 400px;
+            display: flex;
+
+            h1 {
+                color: #FFF;
+                font-size: 30px;
+            }
+        }
+
+    }
+
+    .recall {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0 0 0;
+
+
+        &-rec {
+           
+
+            &_input {
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                input {
+                    display: flex;
+                    width: 413px;
+                    padding: 6px 0px;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    outline: none;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid #FFF;
+
+
+                }
+
+                span {
+                    color: #FFF;
+                    right: 6px;
+                    position: absolute;
+                }
+            }
+        }
+
+        &-comment {
+
+            &_one {
+                width: 670px;
+                height: 80px;
+                flex-shrink: 0;
+                background: #1C1C1E;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+
+                img {
+                    padding-left: 20px;
+                }
+
+                p {
+                    width: 459px;
+                    height: 60px;
+                    flex-shrink: 0;
+                    overflow: hidden;
+                    color: var(--Rectangle-70, #FFF);
+                    text-overflow: ellipsis;
+                    whitespace: nowrap;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+
+                &-tit {
+
+                    h3 {
+                        color: var(--Rectangle-70, #FFF);
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                    }
+
+                    &_lia {
+                        display: flex;
+                        align-items: start;
+                        justify-content: center;
+
+                        h3 {
+                            font-size: 20px;
+                            color: #FFF;
+                        }
+
+                        h2 {
+                            color: #FFF;
+                            font-family: Montserrat;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+#servi {
+  padding: 50px 0 0 0;
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  .servi {
+    &--block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p{
+        color: #FFFFFF;
+      }
+      div{
+        width: 70%;
+        //background: #FFFFFF;
+        overflow-x: scroll;
+      }
+      input{
+        width: 189px;
+        height: 35px;
+        background: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 1px solid var(--red, #D22B43);
+        color: var(--WHITE, #FFF);
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        outline: none;
+      }
+    }
+  }
+}

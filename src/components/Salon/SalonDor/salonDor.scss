@@ -1,0 +1,170 @@
+#runa{
+  //background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .runa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+      margin-left: -560px;
+      margin-bottom: 20px;
+      color: #000;
+      font-family: Oswald;
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 88px; /* 110% */
+      text-transform: uppercase;
+    }
+    &--text{
+      display: flex;
+      &__texts{
+        &--block{
+          background: pink;
+          transition: all 1s;
+          &:hover{
+            background: red;
+          }
+        }
+        &--block1{
+          background: yellow;
+          transition: all 1s;
+          &:hover{
+            background: red;
+          }
+        }
+        &--block, &--block1 {
+          width: 585px;
+          height: 315px;
+          //flex-shrink: 0;
+          h3{
+            margin-left: 40px;
+            padding-top: 30px;
+            margin-bottom: 10px;
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          h4{
+            margin-left: 40px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+          &__block-text{
+            margin-left: 40px;
+            margin-top: 160px;
+            display: flex;
+            justify-content: space-between;
+            h2{
+              color: #FFF;
+              font-family: Oswald;
+              font-size: 30px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 33px; /* 110% */
+              text-transform: uppercase;
+            }
+            button{
+              margin-right: 40px;
+              display: flex;
+              height: 33px;
+              padding: 10px 16px;
+              align-items: center;
+              gap: 16px;
+              border-radius: 8px;
+              border: 1px solid #F3F3F3;
+              color: #F3F3F3;
+              leading-trim: both;
+              text-edge: cap;
+              font-family: Montserrat;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+        }
+      }
+      &__block1{
+        width: 585px;
+        height: 630px;
+        //flex-shrink: 0;
+        background: green;
+        transition: all 1s;
+        &:hover{
+          background: red;
+        }
+        h3{
+          margin-left: 40px;
+          padding-top: 30px;
+          margin-bottom: 10px;
+          color: #FFF;
+          font-family: Montserrat;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        h4{
+          margin-left: 40px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          color: #FFF;
+          font-family: Montserrat;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        &--block-text1{
+          margin-left: 40px;
+          margin-top: 475px;
+          display: flex;
+          justify-content: space-between;
+          h2{
+            color: #FFF;
+            font-family: Oswald;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 33px; /* 110% */
+            text-transform: uppercase;
+          }
+          button{
+            margin-right: 40px;
+            display: flex;
+            height: 33px;
+            padding: 10px 16px;
+            align-items: center;
+            gap: 16px;
+            border-radius: 8px;
+            border: 1px solid #F3F3F3;
+            color: #F3F3F3;
+            leading-trim: both;
+            text-edge: cap;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+
+    }
+  }
+}
