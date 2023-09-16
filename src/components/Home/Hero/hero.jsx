@@ -8,8 +8,9 @@ const Hero = () => {
   const [hero, setHero] = useState(1);
   let str = img;
   if (hero === 1) {
-    str = img;
+    str = img;  
   } else if (hero === 2) {
+    
     str = img1;
   } else if (hero === 3) {
     str = img2;
@@ -34,6 +35,7 @@ const Hero = () => {
             многое другое. Найдите свой <br /> идеальный салон с{" "}
             <span>нами.</span>
           </p>
+   
           </div>
         </div>
       </div>

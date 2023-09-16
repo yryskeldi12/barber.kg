@@ -4,6 +4,8 @@ import Functional from "./functional/functional";
 import Advantages from "./advantages/advantages";
 import Platform from "./platform/platform";
 import Questions from "./Questions/questions";
+import Salons from './Salons';
+
 import Salons from "./Salons";
 
 const Home = () => {
