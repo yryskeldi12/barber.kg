@@ -8,11 +8,9 @@ import Home from "./components/Home/home";
 import Footer from "./components/Footer/footer";
 import Profil from "./components/Barbers/Master/Profil/profil";
 import LoginForm from "./components/loginForm/loginForm";
-import Herosalon from "./components/Salon/herosalon/herosalon";
-import Leapardsalon from "./components/Salon/leapardsalon/leapardsalon";
+import Anketa from "./components/Anketa/anketa";
 
-const App = () => {
- 
+
 
 const App = () => {
     return (
@@ -26,8 +24,8 @@ const App = () => {
                 <Route path="profil" element={<Profil/>}/>
                 <Route path="enter" element={<LoginForm/>}/>
             </Routes>
-            <Anketa/>
             <Footer/>
+            {/*<Anketa/>*/}
         </div>
     );
 };
