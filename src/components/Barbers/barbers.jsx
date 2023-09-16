@@ -17,6 +17,8 @@ const Barbers = () => {
                     <Recom/>
 
                 </div>
+                </div>
+                </div>
         </div>
     );
 };
