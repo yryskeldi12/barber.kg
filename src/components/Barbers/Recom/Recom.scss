@@ -22,7 +22,8 @@
             font-size: 64px;
             font-style: normal;
             font-weight: 400;
-            line-height: 120%; /* 76.8px */
+            line-height: 120%;
+            /* 76.8px */
             letter-spacing: -0.2px;
             text-transform: capitalize;
           }
@@ -36,7 +37,8 @@
             font-size: 22px;
             font-style: normal;
             font-weight: 400;
-            line-height: 130%; /* 28.6px */
+            line-height: 130%;
+            /* 28.6px */
             font-variant: small-caps;
             letter-spacing: -0.2px;
             opacity: 0.8;
@@ -89,7 +91,8 @@
             font-size: 20px;
             font-style: normal;
             font-weight: 500;
-            line-height: 120%; /* 24px */
+            line-height: 120%;
+            /* 24px */
             width: 253px;
             margin-bottom: 8px;
 
@@ -114,24 +117,30 @@
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
-            line-height: 120%; /* 19.2px */
+            line-height: 120%;
+            /* 19.2px */
           }
 
           button {
             display: inline-flex;
-            padding: 10px 32px;
+            padding: 8px 30px;
             align-items: center;
             gap: 16px;
             border-radius: 8px;
             border: 1px solid var(--balack, #111);
             color: var(--balack, #111);
-            leading-trim: both;
-            text-edge: cap;
             font-family: Montserrat;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            cursor: pointer;
+
+            &:hover {
+              background: #111;
+              color: #f3f3f3;
+              transition: .5s;
+            }
           }
         }
       }
