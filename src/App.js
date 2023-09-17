@@ -13,7 +13,6 @@ import Anketa from "./components/Anketa/anketa";
 
 import Herosalon from "./components/Salon/herosalon/herosalon";
 import Leapardsalon from "./components/Salon/leapardsalon/leapardsalon";
-import Anketa from "./components/Anketa/anketa";
 import SalonRecom from "./components/Salon/SalonRecom/salonRecom";
 import { gapi } from 'gapi-script'
 import SalonDor from "./components/Salon/SalonDor/salonDor";
