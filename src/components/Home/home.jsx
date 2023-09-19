@@ -6,7 +6,6 @@ import Platform from "./platform/platform";
 import Questions from "./Questions/questions";
 import Salons from './Salons';
 
-import Salons from "./Salons";
 
 const Home = () => {
     return (
