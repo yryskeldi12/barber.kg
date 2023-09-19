@@ -6,8 +6,8 @@ import { LiaStar } from "react-icons/lia";
 import men from "../Master/masterImg/Rectangle 93.png";
 import men2 from "../Master/masterImg/men2.png";
 import gig from "../Master/masterImg/gig.png";
-import { useStore } from "react-redux";
-import rac from "../Master/masterImg/trac.png";
+// import { useStore } from "react-redux";
+// import rac from "../Master/masterImg/trac.png";
 import { GrFormClose } from "react-icons/gr";
 import { NavLink } from "react-router-dom";
 
