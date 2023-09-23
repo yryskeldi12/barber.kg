@@ -8,20 +8,43 @@ const clientId =
     "187515703227-ipki1jn6tmq5c6dprpq5la00sqndm0aj.apps.googleusercontent.com";
 
 const LoginForm = () => {
+    const [barberMode, setBarberMode] = useState(true)
+    const [isShaking, setIsShaking] = useState(false);
+
+    function toggleBarberMode() {
+        handleShake()
+        setBarberMode(!barberMode)
+    }
+
+    const handleShake = () => {
+        setIsShaking(false);
+        setTimeout(() => {
+            setIsShaking(true);
+        }, 300);
+    };
+
+    const formImgPath = barberMode ? barberImgPath : userImgPath
+
     return (
         <div className="container">
             <div className="user-form">
-                <div className="user-form__left-side">
-                    <div className="user-form__barber">
-                        <p className="user-form__barber-question">
+                <div className={`user-form__left-side ${isShaking ? "shake-left" : ""} }`} style={{ left: barberMode ? "0%" : "50%" }}>
+                    <div
+                        className="user-form__barber"
+                        onClick={toggleBarberMode}>
+                        <p
+                            className="user-form__barber-question"
+                        >
                             Вы мастер и хотите зарегистрироваться?
                         </p>
                         <span className="user-form__barber-title">Для Мастеров</span>
                     </div>
-                    <img className="user-form__bg-img" src={barberImgPath} alt="Master" />
+                    <img className="user-form__bg-img" src={formImgPath} alt="Barbershop" />
                 </div>
 
-                <div className="user-form__right-side">
+                <div className={`user-form__right-side ${isShaking ? "shake-right" : ""}`}
+                    style={{ left: barberMode ? "0%" : "-50%" }}
+                >
                     <div className="register-form">
                         <div className="register-form__wrap">
                             <h2 className="register-form__title">Регистрация</h2>
