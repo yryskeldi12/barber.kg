@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { IoIosArrowBack } from "react-icons/io";
 import "./loginForm.scss";
 import barberImgPath from "./img/c1img.png";
 import userImgPath from "./img/c2img.png";
-import { IoIosArrowBack } from "react-icons/io";
+import SignUp from "./SignUp";
+import SignIn from "./SignIn";
 
 const clientId =
     "187515703227-ipki1jn6tmq5c6dprpq5la00sqndm0aj.apps.googleusercontent.com";
@@ -10,6 +12,7 @@ const clientId =
 const LoginForm = () => {
     const [barberMode, setBarberMode] = useState(true)
     const [isShaking, setIsShaking] = useState(false);
+    const [isSignUp, setIsSignUp] = useState(false);
 
     function toggleBarberMode() {
         handleShake()
@@ -28,16 +31,17 @@ const LoginForm = () => {
     return (
         <div className="container">
             <div className="user-form">
+                <IoIosArrowBack className="user-form__icon" />
                 <div className={`user-form__left-side ${isShaking ? "shake-left" : ""} }`} style={{ left: barberMode ? "0%" : "50%" }}>
                     <div
                         className="user-form__barber"
                         onClick={toggleBarberMode}>
-                        <p
-                            className="user-form__barber-question"
-                        >
-                            Вы мастер и хотите зарегистрироваться?
-                        </p>
-                        <span className="user-form__barber-title">Для Мастеров</span>
+                        {
+                            barberMode && <p className="user-form__barber-question">
+                                Вы мастер и хотите зарегистрироваться?
+                            </p>
+                        }
+                        <span className="user-form__barber-title">Для {barberMode ? "Мастеров" : "Пользователя"}</span>
                     </div>
                     <img className="user-form__bg-img" src={formImgPath} alt="Barbershop" />
                 </div>
@@ -45,44 +49,10 @@ const LoginForm = () => {
                 <div className={`user-form__right-side ${isShaking ? "shake-right" : ""}`}
                     style={{ left: barberMode ? "0%" : "-50%" }}
                 >
-                    <div className="register-form">
-                        <div className="register-form__wrap">
-                            <h2 className="register-form__title">Регистрация</h2>
-                            <span className="register-form__subtitle">Заполните данные для регистрации</span>
-                            <button className="user-form__btn user-form__btn--active register-form__enter">Вход через Google</button>
-                            <span className="register-form__extra">Или</span>
-                        </div>
-
-                        <div className="register-form__fields">
-                            <input
-                                className="register-form__field"
-                                type="text"
-                                placeholder="Никнэйм"
-                            />
-                            <input
-                                className="register-form__field"
-                                type="text"
-                                placeholder="Адрес или Почта"
-                            />
-                            <input
-                                className="register-form__field"
-                                type="password"
-                                placeholder="Пароль"
-                            />
-                            <input
-                                className="register-form__field"
-                                type="password"
-                                placeholder="Повторить пароль"
-                            />
-                        </div>
-                        <div className="user-form__btns">
-                            <button className="user-form__btn user-form__btn--active register-form__btn">Создать аккаунт</button>
-                            <button className="user-form__btn register-form__btn">Войти</button>
-                        </div>
-                    </div>
+                    {isSignUp ? <SignUp setIsSignUp={setIsSignUp} /> : <SignIn setIsSignUp={setIsSignUp} />}
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
