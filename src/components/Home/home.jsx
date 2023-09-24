@@ -6,17 +6,15 @@ import Platform from "./platform/platform";
 import Questions from "./Questions/questions";
 import Salons from './Salons';
 
-import Salons from "./Salons";
-
 const Home = () => {
     return (
         <div id='home'>
-                <Hero/>
-                <Functional/>
-                <Advantages/>
-                <Platform/>
-                <Salons/>
-                <Questions/>
+            <Hero />
+            <Functional />
+            <Advantages />
+            <Platform />
+            <Salons />
+            <Questions />
         </div>
     );
 };
